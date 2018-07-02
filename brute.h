@@ -8,7 +8,6 @@
 #include "argparser.h"
 #include "md5.h"
 
-
 class BruteHelper;
 // Performs single thread force brute 
 class BrutePerformer
