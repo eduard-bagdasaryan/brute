@@ -2,8 +2,7 @@
 #include "argparser.h"
 #include <iostream>
 #include <vector>
-
-
+  
 void ArgParser::PrintUsage() const
 {
     cout << "brute: sample brute-force attack utility." << endl;
@@ -11,10 +10,10 @@ void ArgParser::PrintUsage() const
     cout << "Version: 1.0" << endl << endl;
     cout << "Sample usage:  brute.exe 3 10 65-90:97-122 hash_to_check [num_threads]" << endl;
 }
-
+ 
 void ArgParser::PrintArgs() const
 {
-    cout << "=================== Arguments: ======================" << endl;
+    cout << "=================== Arguments: =======================" << endl;
     cout << setw(15) << left <<  "StartLen" << " = " << StartLen << endl;
     cout << setw(15) << left << "EndLen" << " = " << EndLen << endl;
     cout << setw(15) << left << "FirstChar1" << " = " << First1 << endl;
