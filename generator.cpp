@@ -59,6 +59,7 @@ int StrGenerator::GenerateChunk(StrVec *result_vec, int chunk_len)
 	    result_vec->push_back(vec0[i]);
 	}
 	CurGenStr = "";
+	    
     }
     return result_vec->size();
 }
