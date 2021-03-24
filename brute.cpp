@@ -25,6 +25,7 @@ void BruteHelper::CrackParallel()
     }
 }
 
+
 void BruteHelper::PrintResult() const
 {
     string s = "OK";
