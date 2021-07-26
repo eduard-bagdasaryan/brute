@@ -22,7 +22,7 @@ void BruteHelper::CrackParallel()
 	    return;
 	}
 	left_threads--;
-    }
+    } 
 }
 
 
