@@ -1,6 +1,7 @@
 #ifndef GENERATOR_DOT_H
 #define GENERATOR_DOT_H
 
+
 #include <thread>
 #include <mutex>
 #include "common.h"
