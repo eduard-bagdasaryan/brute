@@ -10,7 +10,7 @@ BruteTester::BruteTester(char first, int cnt1, char second, int cnt2, int maxlen
 
 
 void BruteTester::BlocksGenerateToFile(string const &fname)
-{
+{ 
     int len1 = 10;
     StrVec vec;
     StrGenerator p1(FirstChar, FirstCount, SecondChar, SecondCount, MaxPassLen, StartLen); 
