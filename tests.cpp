@@ -27,7 +27,7 @@ void BruteTester::BlocksGenerateToFile(string const &fname)
         myfile.close();
     }
 }
-
+ 
 void BruteTester::GeneratorSimpleTest()
 {
     int len1 = 1000;
