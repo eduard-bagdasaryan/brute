@@ -2,7 +2,7 @@
 #include "tests.h"
 #include <iostream>
 #include <vector>
- 
+  
   
     
 BruteTester::BruteTester(char first, int cnt1, char second, int cnt2, int maxlen, int startlen)
