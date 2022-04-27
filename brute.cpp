@@ -29,7 +29,6 @@ void BruteHelper::PrintResult() const
     string s = "OK";
     if(!Found)
 	s = "FAIL";
-
     cout     << "Force brute completed:   " << s << endl;
     if(Found)
 	cout << "Found key:               " << SrcKey << endl;
