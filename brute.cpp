@@ -9,7 +9,7 @@ void BruteHelper::CrackParallel()
         shared_ptr<BrutePerformer> p(new BrutePerformer(this));
 	PVec.push_back(p);
 	std::thread thread(&BrutePerformer::Crack, p.get());
-	thread.detach(); 
+	thread.detach();  
     }
     int left_threads = NumThreads;
     while(left_threads)
