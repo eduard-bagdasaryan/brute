@@ -4,7 +4,7 @@
      
 void BruteHelper::CrackParallel()
 {
-    for(int i = 0; i < NumThreads; ++i)
+    for(int i = 0; i < NumThreads; ++i) 
     { 
         shared_ptr<BrutePerformer> p(new BrutePerformer(this));
 	PVec.push_back(p);
