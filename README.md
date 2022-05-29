@@ -32,7 +32,6 @@ The attribute is parsed according to the following ABNF rules:
     empty-line = eol
     eol = <CR>*<LF>
 ```
-
 2. *Co-Authored-by* - The commit message co-author.
 This GitHub-recognized attribute allows to create a commit with multiple
 authors. It should be specified within the optional trailer, which
