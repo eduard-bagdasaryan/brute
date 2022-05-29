@@ -1,5 +1,14 @@
-# New Document
+## Commit message
 
+The staging commit message and, hence, the target branch commit is
+formed by concatenating the PR title (with an appended PR number), an
+empty line and the PR description.
+
+Neither the title nor the description are currently processed to convert
+GitHub markdown to plain text. However, both texts must conform to the
+72 characters/line limit. The automatically added ` #(NNN)` title suffix
+further reduces the maximum PR title length to ~65 characters. PRs violating
+these limits are labeled `M-failed-description` and are not merged.
 ### Message attributess
 
 Commit description may contain special attributes, which are recognized and
@@ -37,3 +46,9 @@ The attribute is parsed according to the following ABNF rules:
     co-authors-paragraph = eol empty-line co-author-line+ empty-line\*
     co-author-line = "Co-Authored-By:" <SP> credentials eol
 ```
+
+## Voting and PR approvals
+
+The following events disqualify a pull request from automatic merging. A
+single event is sufficient for PR disqualification:
+
