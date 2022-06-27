@@ -1,7 +1,7 @@
 #include "brute.h"
 #include <iostream>
 
-#include <vector> 
+#include <vector>  
          
 void BruteHelper::CrackParallel()
 {   
