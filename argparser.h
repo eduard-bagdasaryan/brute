@@ -7,7 +7,7 @@
 class ArgParser
 { 
     public:
-
+ 
         ArgParser(int argc, char **argv);
 
 	bool IsArgsOk() const { return ArgsOk; }

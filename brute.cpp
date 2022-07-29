@@ -1,18 +1,17 @@
 #include "brute.h"
 #include <iostream>
-#include <vector>
 
-
+#include <vector>  
+         
 void BruteHelper::CrackParallel()
-{
-    for(int i = 0; i < NumThreads; ++i)
-    {
+{   
+    for(int i = 0; i < NumThreads; ++i) 
+    { 
         shared_ptr<BrutePerformer> p(new BrutePerformer(this));
 	PVec.push_back(p);
 	std::thread thread(&BrutePerformer::Crack, p.get());
-	thread.detach(); 
+	thread.detach();  
     }
-
     int left_threads = NumThreads;
     while(left_threads)
     {
@@ -30,7 +29,6 @@ void BruteHelper::PrintResult() const
     string s = "OK";
     if(!Found)
 	s = "FAIL";
-
     cout     << "Force brute completed:   " << s << endl;
     if(Found)
 	cout << "Found key:               " << SrcKey << endl;
