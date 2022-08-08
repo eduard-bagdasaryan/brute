@@ -1,15 +1,12 @@
 #include <fstream>
 #include "tests.h"
 #include <iostream>
-#include <vector>
- 
-  
-  
+#include <vector>  
+         
 BruteTester::BruteTester(char first, int cnt1, char second, int cnt2, int maxlen, int startlen)
     :FirstChar(first), FirstCount(cnt1), SecondChar(second), SecondCount(cnt2), MaxPassLen(maxlen), StartLen(startlen)
-{}
-  
-
+{ }
+ 
 void BruteTester::BlocksGenerateToFile(string const &fname)
 { 
     int len1 = 10;
@@ -28,7 +25,7 @@ void BruteTester::BlocksGenerateToFile(string const &fname)
         myfile.close();
     }
 }
-
+ 
 void BruteTester::GeneratorSimpleTest()
 {
     int len1 = 1000;
@@ -62,7 +59,7 @@ void BruteTester::GeneratorCompareTest()
 
     cout << "GeneratorTest completed" << endl;
 }
-
+  
 void BruteTester::GenerateToFile(string const& fname)
 {
     StrVec vec;
