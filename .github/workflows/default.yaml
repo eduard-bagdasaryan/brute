@@ -3,7 +3,7 @@ run-name: ${{ github.actor }} is learning GitHub Actions
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "master", "auto_branch" ]
 
   pull_request:
     branches: [ "master"]
