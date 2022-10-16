@@ -11,7 +11,7 @@ on:
 env:
   # empty except for pull_request events
   PULL_REQUEST_NUMBER: ${{ github.event.pull_request.number }}
-  CHECKOUT_FETCH_DEPTH: 1001
+  CHECKOUT_FETCH_DEPTH: 1001 
   
 jobs:
   check-bats-version:
