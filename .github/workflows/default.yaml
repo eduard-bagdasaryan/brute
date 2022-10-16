@@ -1,0 +1,26 @@
+name: learn-github-actions      
+run-name: ${{ github.actor }} is learning GitHub Actions
+
+on:
+  push:
+    branches: [ "master", "auto_branch" ]
+
+  pull_request:
+    branches: [ "master"]
+
+env:
+  # empty except for pull_request events
+  PULL_REQUEST_NUMBER: ${{ github.event.pull_request.number }}
+  CHECKOUT_FETCH_DEPTH: 1001
+  
+jobs:
+  check-bats-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+      - run: npm install -g bats
+      - run: bats -v
+      - run: sleep 10
