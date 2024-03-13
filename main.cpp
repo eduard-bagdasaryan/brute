@@ -1,12 +1,12 @@
 #include <chrono>
-#include "generator.h"
-#include "tests.h"
-#include "brute.h"
- 
-  
+#include "generator.h" 
+#include "tests.h" 
+#include "brute.h"  
+    
+     
 static void Func() {}
-
-
+       
+       
 int main(int argc, char**argv)
 {
     ArgParser parser(argc, argv);
